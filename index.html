@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="mainPick">
+        <h2 class="choiceText" >Choose your marker</h2>
+        <div class="formPlayers">
+            <div class="option"><img src="images/X.svg" alt=""><input id="playerOne" value = "Player One" class="playerOption" type="text" min="1" placeholder="Player One"></div>
+            <div class="option"><img src="images/O.svg" alt=""><input id="playerTwo" value="Player Two" class="playerOption" type="text" min="1" placeholder="Player Two"></div>
+            <button class="startGame" type="submit">START GAME</button>
+        </div>
+    </main>
+    <main class="game">
+        <div class="playerDisplay">
+            <div class="player playerOneDisplay">
+                <p></p>
+                <img src="/images/X.svg" alt="X Icon">
+            </div>
+            <div class="player playerTwoDisplay">
+                <p></p>
+                <img src="/images/O.svg" alt="O Icon">
+            </div>
+        </div>
+        <div class="board">
+            <img class="tile" id="tile0" src="images/placeholder.png"></img>
+            <img class="tile" id="tile1" src="images/placeholder.png"></img>
+            <img class="tile" id="tile2" src="images/placeholder.png"></img>
+            <img class="tile" id="tile3" src="images/placeholder.png"></img>
+            <img class="tile" id="tile4" src="images/placeholder.png"></img>
+            <img class="tile" id="tile5" src="images/placeholder.png"></img>
+            <img class="tile" id="tile6" src="images/placeholder.png"></img>
+            <img class="tile" id="tile7" src="images/placeholder.png"></img>
+            <img class="tile" id="tile8" src="images/placeholder.png"></img>
+        </div>
+    </main>
+    <div class="restart">
+        <h1 class="winnerAnnouncement"></h1>
+        <img src="images/party.webp" alt="Party Emoji">
+        <button class="restartButton" href="">Play Again?</button>
+    </div>
+</body>
+</html>
